@@ -138,6 +138,33 @@ This sounds difficult. Because it is. But there is no other way.`,
         explanation_en: 'Passion is an intense feeling, but Fromm says it is not love. Love requires active care, knowledge, and responsibility.',
         explanation_ru: 'Страсть — это интенсивное чувство, но Фромм говорит, что это не любовь. Любовь требует активной заботы, знания и ответственности.',
       },
+      {
+        question_az: 'Fromm sevgini hansı sənətə bənzədir?',
+        question_en: 'To which craft does Fromm compare love?',
+        question_ru: 'С каким искусством Фромм сравнивает любовь?',
+        options_az: [
+          'Heç bir şeyə — sevgi öyrənilmir',
+          'Musiqi çalmaq kimi bir sənətə — öyrənmə, məşq tələb edir',
+          'İdmana — yalnız güc tələb edir',
+          'Ticarətə — qarşılıqlı mübadilə'
+        ],
+        options_en: [
+          'To nothing — love cannot be learned',
+          'To an art like playing music — it requires learning and practice',
+          'To sport — it only requires strength',
+          'To trade — a mutual exchange'
+        ],
+        options_ru: [
+          'Ни с чем — любви нельзя научиться',
+          'С искусством, как игра на музыке — требует обучения и практики',
+          'Со спортом — нужна лишь сила',
+          'С торговлей — взаимный обмен'
+        ],
+        correctIndex: 1,
+        explanation_az: 'Fromm sevgini musiqi çalmaq kimi sənət adlandırır: nəzəriyyə, məşq, səbir və əzm tələb edir.',
+        explanation_en: 'Fromm calls love an art like playing music: it requires theory, practice, patience and dedication.',
+        explanation_ru: 'Фромм называет любовь искусством, как игра на музыке: она требует теории, практики, терпения и преданности.',
+      },
     ],
   },
   {
@@ -226,6 +253,33 @@ The trouble is we usually want symbiosis. Because separateness is painful. But s
         explanation_en: 'Fromm recommends mature love — where both individuals remain themselves while becoming united.',
         explanation_ru: 'Фромм рекомендует зрелую любовь — где оба человека остаются собой, но объединяются.',
       },
+      {
+        question_az: 'Simbioz birliyi yetkin sevgidən nə ilə fərqlənir?',
+        question_en: 'How does symbiotic union differ from mature love?',
+        question_ru: 'Чем симбиотическое слияние отличается от зрелой любви?',
+        options_az: [
+          'Heç bir fərqi yoxdur',
+          'Simbiozda fərd özünü itirir, yetkin sevgidə qoruyur',
+          'Simbioz daha güclüdür',
+          'Yetkin sevgi yalnızlıq yaradır',
+        ],
+        options_en: [
+          'There is no difference',
+          'In symbiosis the self dissolves; in mature love it is preserved',
+          'Symbiosis is stronger',
+          'Mature love creates loneliness',
+        ],
+        options_ru: [
+          'Нет разницы',
+          'В симбиозе личность растворяется; в зрелой любви — сохраняется',
+          'Симбиоз сильнее',
+          'Зрелая любовь создаёт одиночество',
+        ],
+        correctIndex: 1,
+        explanation_az: 'Simbiozda insan başqasında əriyir və özünü itirir. Yetkin sevgidə isə iki tam insan birləşir, amma hər biri özü olaraq qalır.',
+        explanation_en: 'In symbiosis a person melts into the other and loses themselves. In mature love two whole people unite while each remains themselves.',
+        explanation_ru: 'В симбиозе человек растворяется в другом и теряет себя. В зрелой любви двое целостных людей соединяются, но каждый остаётся собой.',
+      },
     ],
   },
   {
@@ -307,6 +361,33 @@ Answering this question honestly is where everything begins.`,
         explanation_az: 'Fromm-a görə ana sevgisi "sən mövcudsan" əsasındadır, ata sevgisi isə "sən nailiyyət göstərirsən" əsasındadır.',
         explanation_en: "For Fromm, motherly love is based on existence, fatherly love on achievement.",
         explanation_ru: 'Для Фромма материнская любовь основана на существовании, отцовская — на достижениях.',
+      },
+      {
+        question_az: 'Valideyn "sənsiz yaşaya bilmərəm" deyəndə bu çox vaxt nəyin əlamətidir?',
+        question_en: 'When a parent says "I cannot live without you," this is often a sign of what?',
+        question_ru: 'Когда родитель говорит «я не могу жить без тебя», это часто признак чего?',
+        options_az: [
+          'Dərin və sağlam sevgi',
+          'Valideynin öz ayrılıq qorxusu, sevgi kimi göstərilən',
+          'Uşağın güclü olması',
+          'Şərtsiz sevgi'
+        ],
+        options_en: [
+          'Deep and healthy love',
+          "The parent's own fear of separateness, dressed up as love",
+          'The child being strong',
+          'Unconditional love'
+        ],
+        options_ru: [
+          'Глубокая и здоровая любовь',
+          'Собственный страх одиночества родителя, наряженный в любовь',
+          'Сила ребёнка',
+          'Безусловная любовь'
+        ],
+        correctIndex: 1,
+        explanation_az: 'Fromm xəbərdarlıq edir: belə sözlər çox vaxt sevgi deyil, valideynin öz qorxusunun uşağa yüklənməsidir.',
+        explanation_en: 'Fromm warns that such words are often not love but the parent projecting their own fear onto the child.',
+        explanation_ru: 'Фромм предупреждает: такие слова часто не любовь, а перенос собственного страха родителя на ребёнка.',
       },
     ],
   },
@@ -390,6 +471,33 @@ Who did you truly listen to today?`,
         explanation_en: 'For Fromm, brotherly love begins with truly seeing and listening to someone.',
         explanation_ru: 'По Фромму, братская любовь начинается с того, чтобы по-настоящему видеть и слушать кого-то.',
       },
+      {
+        question_az: 'Həqiqi dinləmək nə deməkdir?',
+        question_en: 'What does it mean to truly listen?',
+        question_ru: 'Что значит по-настоящему слушать?',
+        options_az: [
+          'Cavabını əvvəlcədən hazırlamaq',
+          'Cavab planlamadan, tam mövcud olaraq dinləmək',
+          'Məsləhət vermək üçün gözləmək',
+          'Razılaşdığını göstərmək'
+        ],
+        options_en: [
+          'Preparing your reply in advance',
+          'Being fully present, without planning your response',
+          'Waiting for a chance to give advice',
+          'Showing that you agree'
+        ],
+        options_ru: [
+          'Заранее готовить свой ответ',
+          'Быть полностью присутствующим, не планируя ответ',
+          'Ждать момента дать совет',
+          'Показывать, что согласен'
+        ],
+        correctIndex: 1,
+        explanation_az: 'Fromm üçün dinləmək konsentrasiya tələb edir — cavab fikirləşmədən, qarşındakına tam diqqət vermək.',
+        explanation_en: 'For Fromm, listening requires concentration — giving full attention to the other without thinking of your reply.',
+        explanation_ru: 'Для Фромма слушать — значит концентрироваться: уделять полное внимание другому, не думая о своём ответе.',
+      },
     ],
   },
   {
@@ -465,6 +573,33 @@ When did you give in order to receive? When did you give in order to truly give?
         explanation_az: 'Sahib olan sevgi öz ehtiyacını başqasına proyeksiya edir. Bu, birisini sevmək kimi görünür, amma əslında onu istifadə etməkdir.',
         explanation_en: 'Possessive love projects one\'s own need onto another. It looks like loving them but is actually using them.',
         explanation_ru: 'Собственническая любовь проецирует свою нужду на другого. Это выглядит как любовь к нему, но на самом деле это использование его.',
+      },
+      {
+        question_az: 'Fromm-a görə həqiqi vermək nədir?',
+        question_en: 'According to Fromm, what is true giving?',
+        question_ru: 'По Фромму, что такое истинная отдача?',
+        options_az: [
+          'Qarşılığında nəsə gözləmək',
+          'Özünü itirmədən, gözləntisiz vermək',
+          'Yalnız maddi şeylər vermək',
+          'Vermək, sonra borclu hiss etdirmək'
+        ],
+        options_en: [
+          'Expecting something in return',
+          'Giving freely, without expectation, without losing yourself',
+          'Giving only material things',
+          'Giving, then making them feel indebted'
+        ],
+        options_ru: [
+          'Ожидать что-то взамен',
+          'Давать свободно, без ожиданий, не теряя себя',
+          'Давать только материальное',
+          'Дать, а потом вызвать чувство долга'
+        ],
+        correctIndex: 1,
+        explanation_az: 'Fromm üçün vermək yoxsulluq deyil, zənginlikdir — gözləntisiz vermək insanın öz gücünün ifadəsidir.',
+        explanation_en: 'For Fromm, giving is not poverty but richness — giving without expectation is an expression of one\'s own strength.',
+        explanation_ru: 'Для Фромма отдача — не обеднение, а богатство: давать без ожиданий — это выражение собственной силы.',
       },
     ],
   },
@@ -548,6 +683,33 @@ The question to ask: What does my partner give me? Do I need this gift — or is
         explanation_en: "For Fromm, erotic love must be the union of two whole people, not two halves.",
         explanation_ru: 'По Фромму, эротическая любовь должна быть союзом двух целостных людей, а не двух половин.',
       },
+      {
+        question_az: '"Sən məni tamamlayırsan" fikri Fromm-a görə nədir?',
+        question_en: 'According to Fromm, what is the idea "you complete me"?',
+        question_ru: 'По Фромму, что представляет собой мысль «ты дополняешь меня»?',
+        options_az: [
+          'Sağlam sevginin əsası',
+          'Romantik bir illüziya — tamlığı başqasından gözləmək',
+          'Yetkinliyin əlaməti',
+          'Erotik sevginin məqsədi'
+        ],
+        options_en: [
+          'The basis of healthy love',
+          'A romantic illusion — expecting wholeness from another',
+          'A sign of maturity',
+          'The goal of erotic love'
+        ],
+        options_ru: [
+          'Основа здоровой любви',
+          'Романтическая иллюзия — ожидать целостности от другого',
+          'Признак зрелости',
+          'Цель эротической любви'
+        ],
+        correctIndex: 1,
+        explanation_az: 'Fromm bunu illüziya adlandırır: əvvəlcə özün tam olmalısan. İki yarım birləşəndə yalnız iki yarım qalır.',
+        explanation_en: 'Fromm calls this an illusion: you must first be whole yourself. When two halves join, only two halves remain.',
+        explanation_ru: 'Фромм называет это иллюзией: сначала нужно стать целым самому. Когда соединяются две половины, остаются лишь две половины.',
+      },
     ],
   },
   {
@@ -630,6 +792,33 @@ Love yourself so that you can love others. This is the beginning.`,
         explanation_en: "For Fromm, selfishness is caring for oneself at others' expense. Self-love is caring for one's own growth — without harming others.",
         explanation_ru: "По Фромму, эгоизм — это забота о себе за счёт других. Любовь к себе — это забота о собственном росте, не причиняя вреда другим.",
       },
+      {
+        question_az: 'Fromm-a görə özünü sevə bilməyən insan başqasını sevə bilərmi?',
+        question_en: 'According to Fromm, can a person who cannot love themselves love another?',
+        question_ru: 'По Фромму, может ли человек, не умеющий любить себя, любить другого?',
+        options_az: [
+          'Bəli, asanlıqla',
+          'Xeyr — özünə sevgi başqasını sevməyin şərtidir',
+          'Bəli, amma yalnız ailəni',
+          'Bunun sevgiylə əlaqəsi yoxdur'
+        ],
+        options_en: [
+          'Yes, easily',
+          'No — love of self is the condition for loving others',
+          'Yes, but only family',
+          'This has nothing to do with love'
+        ],
+        options_ru: [
+          'Да, легко',
+          'Нет — любовь к себе есть условие любви к другим',
+          'Да, но только семью',
+          'Это не связано с любовью'
+        ],
+        correctIndex: 1,
+        explanation_az: 'Fromm deyir: özünə hörmət və qayğı olmadan başqasına olan "sevgi" çox vaxt asılılıqdır, sevgi deyil.',
+        explanation_en: 'Fromm says: without respect and care for oneself, "love" for another is often dependency, not love.',
+        explanation_ru: 'Фромм говорит: без уважения и заботы о себе «любовь» к другому часто оказывается зависимостью, а не любовью.',
+      },
     ],
   },
   {
@@ -706,6 +895,33 @@ The question: What is this for you? When are you most fully present? For what do
         explanation_en: "In Fromm's secular version, 'love of God' is devotion to meaning through living, beauty, and growth.",
         explanation_ru: "В светской версии Фромма «любовь к Богу» — это преданность смыслу через жизнь, красоту и рост.",
       },
+      {
+        question_az: 'Tam mövcudluq anı (musiqi çalmaq, dərin düşünmək) Fromm üçün nəyi təmsil edir?',
+        question_en: 'A moment of full presence (playing music, deep thought) represents what for Fromm?',
+        question_ru: 'Момент полного присутствия (игра музыки, глубокое размышление) — что он представляет для Фромма?',
+        options_az: [
+          'Vaxt itkisi',
+          'Həyata olan sevginin dünyəvi ifadəsi',
+          'Yalnız istedadlılar üçün',
+          'Dini bir təcrübə'
+        ],
+        options_en: [
+          'A waste of time',
+          'A secular expression of love for life itself',
+          'Only for the talented',
+          'A religious experience'
+        ],
+        options_ru: [
+          'Пустая трата времени',
+          'Светское выражение любви к самой жизни',
+          'Только для талантливых',
+          'Религиозный опыт'
+        ],
+        correctIndex: 1,
+        explanation_az: 'Fromm üçün belə anlar — tam diri olduğun, özünü aşdığın anlar — həyatın özünə ehtiramın ifadəsidir.',
+        explanation_en: 'For Fromm, such moments — when you are fully alive and transcend yourself — express reverence for life itself.',
+        explanation_ru: 'Для Фромма такие моменты — когда ты полностью жив и преодолеваешь себя — выражают благоговение перед самой жизнью.',
+      },
     ],
   },
   {
@@ -781,6 +997,33 @@ What will you reduce in your own life? What will you grow?`,
         explanation_az: 'Fromm-a görə kapitalist cəmiyyəti insanları, o cümlədən münasibətləri, bazar məntiqi ilə görür. Bu, sevgiyə düşməndir.',
         explanation_en: "For Fromm, capitalist society sees people — including relationships — through market logic. This is hostile to love.",
         explanation_ru: "По Фромму, капиталистическое общество рассматривает людей — включая отношения — через рыночную логику. Это враждебно любви.",
+      },
+      {
+        question_az: 'Sosial media daha çox "bağlantı" verir, amma araşdırmalar nə göstərir?',
+        question_en: 'Social media gives more "connectivity," but what does research show?',
+        question_ru: 'Соцсети дают больше «связей», но что показывают исследования?',
+        options_az: [
+          'İnsanlar daha xoşbəxtdir',
+          'İnsanlar daha tənhadır — bağlantı var, amma əlaqə yoxdur',
+          'Sevgi asanlaşıb',
+          'Heç bir dəyişiklik yoxdur'
+        ],
+        options_en: [
+          'People are happier',
+          'People are lonelier — there is connectivity but no real connection',
+          'Love has become easier',
+          'Nothing has changed'
+        ],
+        options_ru: [
+          'Люди счастливее',
+          'Люди более одиноки — есть подключённость, но нет настоящей связи',
+          'Любовь стала проще',
+          'Ничего не изменилось'
+        ],
+        correctIndex: 1,
+        explanation_az: 'Fromm-un məntiqi ilə: sözlər var, amma dinləmə yoxdur; bağlantı var, amma həqiqi əlaqə yoxdur.',
+        explanation_en: 'In Fromm\'s logic: there are words but no listening; connectivity but no real connection.',
+        explanation_ru: 'По логике Фромма: есть слова, но нет слушания; есть подключённость, но нет настоящей связи.',
       },
     ],
   },
@@ -863,6 +1106,33 @@ Love is work. Begin it today.`,
         explanation_az: 'Fromm-a görə hər sənəti öyrənmək üçün — sevgi də daxil — intizam, diqqət, səbir və inam lazımdır.',
         explanation_en: 'For Fromm, learning any art — including love — requires discipline, concentration, patience, and faith.',
         explanation_ru: 'По Фромму, для освоения любого искусства — включая любовь — необходимы дисциплина, концентрация, терпение и вера.',
+      },
+      {
+        question_az: 'Narsisizm sevginin məşqinə niyə mane olur?',
+        question_en: 'Why does narcissism block the practice of love?',
+        question_ru: 'Почему нарциссизм мешает практике любви?',
+        options_az: [
+          'Çünki narsisizm çox enerji tələb edir',
+          '"Mən artıq tamam, dəyişməyə ehtiyacım yoxdur" deyir',
+          'Narsisizm sevgini gücləndirir',
+          'Heç bir əlaqəsi yoxdur'
+        ],
+        options_en: [
+          'Because narcissism requires too much energy',
+          'It says "I am already complete, I have no need to change"',
+          'Narcissism strengthens love',
+          'It has no connection'
+        ],
+        options_ru: [
+          'Потому что нарциссизм требует много энергии',
+          'Он говорит «я уже совершенен, мне незачем меняться»',
+          'Нарциссизм усиливает любовь',
+          'Никак не связан'
+        ],
+        correctIndex: 1,
+        explanation_az: 'Narsisizm dəyişməyi və öyrənməyi rədd edir. Sevgi isə "böyüyə bilərəm, dəyişə bilərəm" deyir — bu, intizam və təvazökarlıq tələb edir.',
+        explanation_en: 'Narcissism refuses to change or learn. Love says "I can grow, I can change" — which requires discipline and humility.',
+        explanation_ru: 'Нарциссизм отказывается меняться и учиться. Любовь говорит «я могу расти, я могу меняться» — а это требует дисциплины и смирения.',
       },
     ],
   },

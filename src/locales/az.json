@@ -165,7 +165,9 @@
     "notifications": {
       "title": "Bildirişlər",
       "daily": "Günlük xatırlatma",
-      "time": "Xatırlatma vaxtı"
+      "time": "Xatırlatma vaxtı",
+      "reminderMessage": "Bu gün özün üçün bir an ayır. Sevmək bir məşqdir.",
+      "denied": "Bildiriş icazəsi verilmədi. Cihaz parametrlərindən aça bilərsən."
     },
     "data": {
       "title": "Məlumatlar",
