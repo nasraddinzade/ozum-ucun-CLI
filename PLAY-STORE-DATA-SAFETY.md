@@ -55,8 +55,8 @@ For each data type below, select **"No, my app does not collect or share this":*
 ## 3. Other Play Console sections to complete
 
 **Privacy policy URL** (App content → Privacy policy):
-`https://nasraddinzade.github.io/ozum-ucun-CLI/`
-(Enable GitHub Pages first — see GITHUB-PAGES-SETUP below.)
+`https://ozum-ucun-privacy.netlify.app/`
+(Live and hosted on Netlify — repo stays private.)
 
 **Content rating questionnaire** (App content → Content rating):
 - Category: Reference, News, or Education (choose Education/Reference).
@@ -79,18 +79,8 @@ declare "All functionality is available without restrictions."
 
 ---
 
-## GITHUB-PAGES-SETUP (to get the privacy policy URL live)
+## Privacy policy hosting — DONE
 
-1. Open the repo: https://github.com/nasraddinzade/ozum-ucun-CLI
-2. **Settings** (top tab) → **Pages** (left sidebar)
-3. Under "Build and deployment":
-   - Source: **Deploy from a branch**
-   - Branch: **main**, folder: **/docs** → **Save**
-4. Wait ~1 minute. The page will be published at:
-   **https://nasraddinzade.github.io/ozum-ucun-CLI/**
-
-> NOTE: GitHub Pages serves a **public** website. If the repo is **private**, a
-> free GitHub account cannot publish Pages publicly — either (a) make the repo
-> public, or (b) host the privacy policy elsewhere (e.g., a public Gist, Netlify,
-> or Google Sites). The `docs/index.html` page in this repo is ready to use in any
-> of those.
+The privacy policy is live at **https://ozum-ucun-privacy.netlify.app/**
+(hosted on Netlify from the standalone `docs/index.html`; the GitHub repo can stay
+private). Use this exact URL in Play Console → App content → Privacy policy.
