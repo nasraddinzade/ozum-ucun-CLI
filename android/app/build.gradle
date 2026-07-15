@@ -84,12 +84,17 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    // Split the APK per ABI so each file only ships native code for one
+    // Split the APK per ABI so each release file only ships native code for one
     // architecture. Real phones are arm64-v8a (modern) or armeabi-v7a (older);
     // x86/x86_64 are emulators only. This cuts ~86MB universal -> ~30MB arm64.
+    // Splits are release-only: debug builds a single APK for whatever ABI is in
+    // reactNativeArchitectures (x86_64 for the emulator) so dev runs anywhere.
+    def isReleaseBuild = gradle.startParameter.taskNames.any {
+        it.toLowerCase().contains("release")
+    }
     splits {
         abi {
-            enable true
+            enable isReleaseBuild
             reset()
             include "arm64-v8a", "armeabi-v7a"
             universalApk false
