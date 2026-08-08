@@ -167,7 +167,8 @@
       "daily": "Daily reminder",
       "time": "Reminder time",
       "reminderMessage": "Take a moment for yourself today. Love is a practice.",
-      "denied": "Notification permission was denied. You can enable it in device settings."
+      "denied": "Notification permission was denied. You can enable it in device settings.",
+      "confirmed": "Daily reminder set for {{time}}."
     },
     "data": {
       "title": "Your Data",

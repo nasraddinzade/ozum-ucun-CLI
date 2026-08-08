@@ -167,7 +167,8 @@
       "daily": "Günlük xatırlatma",
       "time": "Xatırlatma vaxtı",
       "reminderMessage": "Bu gün özün üçün bir an ayır. Sevmək bir məşqdir.",
-      "denied": "Bildiriş icazəsi verilmədi. Cihaz parametrlərindən aça bilərsən."
+      "denied": "Bildiriş icazəsi verilmədi. Cihaz parametrlərindən aça bilərsən.",
+      "confirmed": "Xatırlatma hər gün saat {{time}} üçün quruldu."
     },
     "data": {
       "title": "Məlumatlar",

@@ -23,9 +23,9 @@ import {
   cancelAllReminders,
 } from '../../utils/notifications';
 
-const VERSION = '1.0.0';
+const VERSION = '1.0.2';
 const NOTIF_ENABLED_KEY = 'notif_enabled';
-const TIME_OPTIONS = ['09:00', '12:00', '18:00', '21:00'];
+const TIME_OPTIONS = ['07:00', '09:00', '12:00', '18:00', '21:00', '22:00'];
 
 const LANGUAGES: {code: SupportedLanguage; label: string}[] = [
   {code: 'az', label: 'Azərbaycan dili'},
@@ -63,6 +63,7 @@ export default function SettingsScreen() {
       await scheduleDailyReminder(notifTime, t('settings.notifications.reminderMessage'));
       setNotifEnabled(true);
       await AsyncStorage.setItem(NOTIF_ENABLED_KEY, '1');
+      Alert.alert('', t('settings.notifications.confirmed', {time: notifTime}));
     } else {
       await cancelAllReminders();
       setNotifEnabled(false);
@@ -272,10 +273,12 @@ const styles = StyleSheet.create({
   },
   timeChips: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     gap: Spacing[2],
   },
   timeChip: {
-    flex: 1,
+    flexGrow: 1,
+    flexBasis: '30%',
     paddingVertical: Spacing[3],
     borderRadius: BorderRadius.md,
     borderWidth: 1,
