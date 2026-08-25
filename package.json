@@ -2,7 +2,7 @@
   "name": "ozumucun",
   "version": "1.0.2",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "Ramin Nasraddinzade <nasraddinzade@gmail.com>",
   "scripts": {
     "android": "react-native run-android",

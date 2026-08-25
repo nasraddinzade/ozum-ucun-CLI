@@ -2,8 +2,7 @@
 
 A philosophical self-reflection app for Android, built with React Native.
 
-> © 2026 Ramin Nasraddinzade. All rights reserved.
-> Proprietary and confidential software — not open source. See [LICENSE](./LICENSE).
+> © 2026 Ramin Nasraddinzade — released under the [MIT License](./LICENSE).
 
 ---
 
@@ -107,8 +106,8 @@ To learn more about React Native, take a look at the following resources:
 
 # License
 
-© 2026 Ramin Nasraddinzade. All rights reserved.
+Released under the [MIT License](./LICENSE) — © 2026 Ramin Nasraddinzade.
 
-This project is proprietary and confidential. It is **not** open source, and no
-license is granted to use, copy, modify, or distribute it without prior written
-permission from the author. See the [LICENSE](./LICENSE) file for full terms.
+You are free to use, copy, modify, and distribute this software, provided the
+copyright notice and license text are included. See the [LICENSE](./LICENSE)
+file for full terms.
