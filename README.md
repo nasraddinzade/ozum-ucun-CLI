@@ -1,113 +1,125 @@
-# Özüm üçün
+<div align="center">
 
-A philosophical self-reflection app for Android, built with React Native.
+<img src="./play-store/feature-graphic-1024x500.png" alt="Özüm üçün" width="640" />
 
-> © 2026 Ramin Nasraddinzade — released under the [MIT License](./LICENSE).
+# Özüm üçün — the art of loving
+
+**A calm, offline self-reflection app for Android, inspired by Erich Fromm's _The Art of Loving_.**
+
+Understand yourself, one honest question at a time — no ads, no accounts, no data collection.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+![Platform](https://img.shields.io/badge/platform-Android-3ddc84.svg)
+![React Native](https://img.shields.io/badge/React%20Native-0.85-61dafb.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6.svg)
+![Offline](https://img.shields.io/badge/offline-first-b8671b.svg)
+
+</div>
 
 ---
 
-This is a [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+## About
 
-# Getting Started
+**Özüm üçün** (Azerbaijani for _"for myself"_) is a philosophical companion for getting to
+know yourself — without rushing, and without toxic positivity. It draws on Erich Fromm's idea
+that love is not a feeling you fall into, but an art you practice.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+The app walks you through **10 guided modules** — care, responsibility, respect, knowledge,
+solitude, maturity and more. Each module follows the same rhythm:
 
-## Step 1: Start Metro
+> **Concept card** → **Reflection question** → **Daily practice** → **Scenario quiz**
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+Everything you write stays **only on your device**. There is no server, no sign-up, and no
+tracking. The app works fully offline.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## Screenshots
 
-```sh
-# Using npm
+<div align="center">
+<img src="./play-store/screenshots/01-welcome.png" alt="Welcome" width="240" />
+&nbsp;&nbsp;
+<img src="./play-store/screenshots/02-onboarding.png" alt="Onboarding" width="240" />
+</div>
+
+## Features
+
+- 📚 **10 structured modules** — concept → reflection → practice → scenario quiz
+- 📝 **Private reflection journal** — stored locally, never leaves the device
+- 🎯 **Gamification** — XP, levels, badges, and a growing-heart progress mechanic
+- 🔔 **Optional daily reminders** — gentle, inexact local notifications
+- 🌍 **Full internationalization** — Azerbaijani, English, Russian
+- 🔒 **Privacy-first** — no backend, no accounts, no data collection, works offline
+- 🎨 **Custom warm design system** — tokens for color, type, and spacing
+
+## Tech stack
+
+| Area | Choice |
+|------|--------|
+| Framework | **React Native 0.85** (bare CLI, New Architecture) + **React 19** |
+| Language | **TypeScript** |
+| Local database | **op-sqlite** — offline-first, zero network |
+| State | **Zustand** |
+| Navigation | **React Navigation v6** (native-stack + bottom-tabs) |
+| Notifications | **Notifee** (local, inexact daily reminders) |
+| Animation | **Reanimated 4** + Worklets |
+| i18n | **i18next** / react-i18next (3 languages) |
+| Graphics | **react-native-svg**, custom bootsplash |
+
+## Architecture highlights
+
+- **Offline-first, backend-free.** All state (journal entries, check-ins, progress, settings)
+  lives in a local SQLite database. The app has no server and makes no network calls for user
+  data.
+- **Thin, testable data layer.** A small adapter wraps op-sqlite with `runAsync` /
+  `getFirstAsync` / `getAllAsync` helpers so the rest of the app is storage-agnostic.
+- **Typed content model.** All 10 modules and their quizzes are defined as typed data,
+  localized into three languages.
+
+## Engineering challenges solved
+
+Building solo meant owning everything from native crashes to store review. A few highlights:
+
+- **Native startup crash → ABI splits.** Tracked a `couldn't find DSO to load:
+  libreactnative.so` crash to per-ABI splits being applied to _debug_ builds. Made splits
+  release-only so debug ships a single-ABI APK that runs anywhere.
+- **SQLite returning empty rows.** After migrating from `expo-sqlite` to `op-sqlite`,
+  parameterless `SELECT`s silently returned no rows. Rewrote the adapter to materialize rows
+  from `columnNames` + `rawRows` and to skip the params array when empty.
+- **Restricted permission cleanup.** A notifications dependency injected
+  `USE_EXACT_ALARM` / `SCHEDULE_EXACT_ALARM` via the manifest merger. Since daily reminders
+  only need _inexact_ alarms, stripped them with `tools:node="remove"` to avoid a restricted
+  Play permission and pass review.
+- **Full Play release pipeline.** Upload keystore + Play App Signing, signed AAB, Data Safety
+  (no collection), content rating, and the 12-tester / 14-day closed-testing requirement for
+  new personal developer accounts.
+
+## Getting started
+
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Start Metro
 npm start
 
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
+# 3. In a second terminal, build & run on a connected device/emulator
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
-### iOS
+**Prerequisites:** Node 18+, JDK 17, Android SDK, and an Android emulator or device.
+Release builds read signing credentials from a gitignored `android/keystore.properties`.
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+## Privacy
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+The app collects nothing. Full policy:
+**https://ozum-ucun-privacy.netlify.app/**
 
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-
-# License
+## License
 
 Released under the [MIT License](./LICENSE) — © 2026 Ramin Nasraddinzade.
 
-You are free to use, copy, modify, and distribute this software, provided the
-copyright notice and license text are included. See the [LICENSE](./LICENSE)
-file for full terms.
+## Author
+
+**Ramin Nasraddinzade**
+📧 nasraddinzade@gmail.com
+
+> 💼 Open to **React Native / Mobile / Frontend Developer** roles — feel free to reach out.
